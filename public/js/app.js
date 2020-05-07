@@ -1,4 +1,3 @@
-console.log("gfhjn")
 
 
 const weatherForm = document.querySelector('form')
