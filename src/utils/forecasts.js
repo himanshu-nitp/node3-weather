@@ -13,10 +13,13 @@ const forecast = ( lat , long , callback ) => {
         }
         else
         {
+            
             callback( undefined , 'It is currently '+ body.current.temperature + ' degrees out. There is a '+ 
-                     body.current.precip + '% chance of rain. Summary : ' + body.current.weather_descriptions[0] )
+                     body.current.precip + '% chance of rain. Summary : ' + body.current.weather_descriptions[0] + '\n Humidity : ' + 
+                     body.current.humidity + '\n Pressure : ' + body.current.pressure)
         }
     })
 }
+
 
 module.exports = forecast
